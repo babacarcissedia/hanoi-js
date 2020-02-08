@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tour de HANOI | Babacar Cissé DIA | L3INFO</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="css/hanoi.css">
+</head>
+<body>
+	<div class="hanoi_container">
+		<div class="hanoi">
+			<div id="tower_container">
+				<div class="row">
+					<div class="tower col-sm-4" id="tower_source">
+						<div class="tower_horizontal">
+							&nbsp;
+							<div class="disk_container">
+								<div class="disk_wrap">
+									<!-- contenu ajouter en javascript -->
+									<!-- par exemple
+									<div class="hanoi_disk" style="width:50px"></div>
+									<div class="hanoi_disk" style="width:100px"></div>
+									<div class="hanoi_disk" style="width:150px"></div>
+									<div class="hanoi_disk" style="width:200px"></div>
+									<div class="hanoi_disk" style="width:250px"></div>
+									-->
+								</div>
+							</div>
+						</div>
+						<div class="tower_vertical"></div>
+						<span class="tower_name">Source</span>
+					</div>
+					<div class="tower col-sm-4" id="tower_medium">
+						<div class="tower_horizontal">
+							&nbsp;
+							<div class="disk_container">
+								<div class="disk_wrap">
+									<!-- contenu ajouter en javascript -->
+								</div>
+							</div>
+						</div>
+						<div class="tower_vertical"></div>
+						<span class="tower_name">Medium</span>
+					</div>
+					<div class="tower col-sm-4" id="tower_destination">
+						<div class="tower_horizontal">
+							&nbsp;
+							<div class="disk_container">
+								<div class="disk_wrap">
+									<!-- contenu ajouter en javascript -->
+								</div> 
+							</div>
+						</div>
+						<div class="tower_vertical"></div>
+						<span class="tower_name">Destination</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="test"></div>
+	<div class="controls">
+		<div class="row">
+			<div class="well col-sm-4 col-sm-offset-4">
+				<form method="POST" id="hanoi_play" class="form-horizontal">
+					<div class="form-group">
+						<label class="form-label" id="nb_disks">Nombre de disques</label>
+						<select name="nb_disks" class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option selected="">3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-primary">Jouer/recommencer</button>
+				</form><br>
+				<button id="hanoi_solve" class="btn btn-primary"><i class="glyphicon glyphicon-info-sign"></i> Solution</button>
+				<button id="hanoi_help" class="btn btn-primary"><i class="glyphicon glyphicon-question-sign"></i> Aide</button>
+			</div>
+			<div class="col-sm-4 hanoi_score">
+				Nombre de déplacements minimums <span id="hanoi_score_min" class="badge">7</span><br>
+				Nombre de déplacements <span id="hanoi_score" class="badge">0</span>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/interact.min.js"></script>
+	<script type="text/javascript" src="js/sweetalert.min.js"></script>
+	<script type="text/javascript" src="js/hanoi.js"></script>
+</body>
+</html>
